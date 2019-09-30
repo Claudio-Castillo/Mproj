@@ -79,7 +79,7 @@ write_cases_estimation <- function(spp, case, dir=case_folder){
     ## Write a change_e case file for which params to estimate
     pars <- c("L_at_Amin_Fem_GP_1", "L_at_Amax_Fem_GP_1",
               "VonBert_K_Fem_GP_1", "CV_young_Fem_GP_1",
-              "CV_old_Fem_GP_1", "SR_BH_steep")
+              "CV_old_Fem_GP_1")
     if(case==0){ ## neither h nor M estimated
         phases <- c(rep(-1, 5),-1)
         M.est <- 'natM_val;c(NA,-1)'
@@ -103,7 +103,7 @@ write_cases_estimation <- function(spp, case, dir=case_folder){
     writeLines(est, con=paste0(dir,"/", "E", case,"-", spp, ".txt"))
 }
 
-## Make some data frames that are matched to results later and used to haev
+## Make some data frames that are matched to results later and used to have
 ## better names in plots more easily
 D.cases <- seq_along(ESS.scalar.vec)
 D.df <-
