@@ -1,9 +1,10 @@
 # install.packages("devtools")
-devtools::install_github("ss3sim/ss3sim", 
+#devtools::install_github("ss3sim/ss3sim", 
                          ref = "development", build_vignettes = TRUE, dependencies = TRUE)
 
 library(ss3sim)
-example("run_ss3sim",package = "ss3sim")
+library(here)
+#example("run_ss3sim",package = "ss3sim")
 #' # Create a temporary folder for the output and set the working directory:
 temp_path <- file.path(tempdir(), "ss3sim-example")
 dir.create(temp_path, showWarnings = FALSE)
