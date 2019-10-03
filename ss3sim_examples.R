@@ -1,6 +1,6 @@
 # install.packages("devtools")
 #devtools::install_github("ss3sim/ss3sim", 
-                         ref = "development", build_vignettes = TRUE, dependencies = TRUE)
+                        # ref = "development", build_vignettes = TRUE, dependencies = TRUE)
 
 library(ss3sim)
 library(here)
@@ -19,12 +19,12 @@ em <- file.path(d, "models", "cod-em")
 case_folder <- file.path(d, "eg-cases")
 #
 # Without bias adjustment:
-run_ss3sim(iterations = 1, scenarios = "D0-F0-cod",
+run_ss3sim(iterations = 1, scenarios = "D0-F0-E99-cod",
            case_folder = case_folder, om_dir = om, em_dir = em)
 unlink("D0-F0-cod", recursive = TRUE) # clean up
 
 # An example specifying the case files:
-run_ss3sim(iterations = 1, scenarios = "D0-F0-E0-cod",
+run_ss3sim(iterations = 2, scenarios = "D0-F0-E999-cod",
            case_folder = case_folder, om_dir = om, em_dir = em,
            case_files = list(F = "F", D = c("index", "lcomp",
                                             "agecomp"), E = "E"))
