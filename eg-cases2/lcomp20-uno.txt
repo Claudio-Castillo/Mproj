@@ -1,0 +1,4 @@
+fleets; c(1)
+Nsamp; NULL
+years; NULL
+cpar; c(NA)

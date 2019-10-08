@@ -10,7 +10,7 @@
 #_Cond 1 #_Morph_between/within_stdev_ratio (no read if N_morphs=1)
 #_Cond  1 #vector_Morphdist_(-1_in_first_val_gives_normal_approx)
 #
-4 #2 # recr_dist_method for parameters:  2=main effects for GP, Settle timing, Area; 3=each Settle entity; 4=none, only when N_GP*Nsettle*pop==1
+2 # recr_dist_method for parameters:  2=main effects for GP, Settle timing, Area; 3=each Settle entity; 4=none, only when N_GP*Nsettle*pop==1
 1 # not yet implemented; Future usage: Spawner-Recruitment: 1=global; 2=by area
 1 #  number of recruitment settlement assignments
 0 # unused option
@@ -92,9 +92,9 @@
  2.5 3.5 3.101 3.101 0.2 0 -3 0 0 0 0 0 0 0 # Wtlen_2_Mal
 # Hermaphroditism
 #  Recruitment Distribution
- #-4 4 0 0 0 0 -4 0 0 0 0 0 0 0 # RecrDist_GP_1
- #-4 4 0 0 0 0 -4 0 0 0 0 0 0 0 # RecrDist_Area_1
- #-4 4 0 0 0 0 -4 0 0 0 0 0 0 0 # RecrDist_timing_1
+ -4 4 0 0 0 0 -4 0 0 0 0 0 0 0 # RecrDist_GP_1
+ -4 4 0 0 0 0 -4 0 0 0 0 0 0 0 # RecrDist_Area_1
+ -4 4 0 0 0 0 -4 0 0 0 0 0 0 0 # RecrDist_timing_1
 #  Cohort growth dev base
  -4 4 1 0 0 0 -4 0 0 0 0 0 0 0 # CohortGrowDev
 #  Movement
